@@ -1,8 +1,8 @@
-# Proje 1 - Front-End Pratik Çalışması
+# Proje 1 - Front-End Pratik Çalışması (Yapım Aşamasında)
 
 ![Proje Görseli](https://doganaylab.com/photos/projectstarcitizen.png)
 
-Bu proje, front-end geliştirme sürecimi ilerletmek için oluşturduğum bir pratik çalışmasıdır. HTML ve CSS kullanılarak geliştirilmiş olup, temel seviyede web tasarım ve animasyon tekniklerini içermektedir.
+Bu proje, front-end geliştirme sürecimi ilerletmek için oluşturduğum bir pratik çalışmasıdır. Henüz yapım aşamasında olup, geliştirme süreci devam etmektedir. HTML ve CSS kullanılarak temel web tasarım ve animasyon tekniklerini içermektedir.
 
 ## Canlı Önizleme
 [Proje 1 - Çalışan Versiyon](https://proje1.doganaylab.com/)
@@ -13,11 +13,16 @@ Bu proje, front-end geliştirme sürecimi ilerletmek için oluşturduğum bir pr
 - Google Fonts & Font Awesome
 - Animate.css
 
-## Özellikler
+## Mevcut Özellikler
 - Basit ve şık bir tasarım
 - CSS ile geliştirilmiş hover efektleri
 - Responsive uyumluluk
 - Font ve ikon desteği
+
+## Planlanan Özellikler
+- JavaScript ile interaktif öğeler ekleme
+- Daha gelişmiş animasyonlar
+- Kullanıcı dostu geliştirmeler
 
 ## Kurulum
 Projeyi yerel ortamda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
@@ -33,7 +38,7 @@ Projeyi yerel ortamda çalıştırmak için aşağıdaki adımları izleyebilirs
     - `index.html` dosyasını bir tarayıcıda açarak görüntüleyebilirsiniz.
 
 ## Geliştirme Süreci
-Bu proje, HTML ve CSS konusunda pratiğimi geliştirmek amacıyla oluşturuldu. Gelecekte eklemeler ve iyileştirmeler yapmayı planlıyorum.
+Bu proje, HTML ve CSS konusunda pratiğimi geliştirmek amacıyla oluşturuldu ve halen geliştirilmektedir. İlerleyen süreçte yeni özellikler eklemeyi ve projeyi daha kapsamlı hale getirmeyi planlıyorum.
 
 ## Katkıda Bulunma
 Bu projeyi geliştirmek için önerilere açığım! Herhangi bir fikir veya öneriniz varsa, lütfen paylaşın. 😊
