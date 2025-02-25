@@ -120,72 +120,6 @@ header {
     opacity: 1;
 }
 
-/* .menu {
-    display: flex;
-    margin-left: 80px;
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 40px;
-         li {
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-            a {
-                font-family: "Phudu", serif;
-                position: relative;
-                font-weight: 340;
-                font-size: 20px;
-                color: rgb(235, 0, 0);
-                padding: 15px 20px;
-                border-radius: 10px;
-                transition: all 0.5s ease-in-out ;
-                &:hover {
-                text-shadow: red 0px 0px 5px;;          
-                }
-            }
-            
-         } .hover1 {
-            position: absolute;
-            width: 150px;
-            height: 50px;
-            border-radius: 5px;
-            z-index: 0 ;
-            background: linear-gradient(360deg, rgba(255, 0, 0, 0.514) 0%, rgba(255,0,0,0) 100%);
-            transition: all 0.5s ease-in-out;
-            bottom: -20px;
-            left: -10px;
-            opacity: 0;
-             &:hover {
-                height: 150px;
-                opacity: 1;
-            }
-        }
-        .hover2 {
-            position: absolute;
-            width: auto;
-            height: 50px;
-            border-radius: 5px;
-            z-index: 0 ;
-            background: linear-gradient(360deg, rgba(255, 0, 0, 0.514) 0%, rgba(255,0,0,0) 100%);
-            transition: all 0.5s ease-in-out;
-            left:0;
-            right: 0;
-            bottom: -20px;
-            left: -15px;
-            opacity: 0;
-             &:hover {
-                height: 150px;
-                opacity: 1;
-            }
-        } 
-         
-
-    } 
-}*/
-
 .headerrigt {
     display: flex;
     justify-content: center;
@@ -260,21 +194,24 @@ header {
 .banner {
     width: 100%;
     height: 50vh;
-    /* background-color: rgba(129, 0, 0, 0.966); */
     background-image: url(/img/gezegen.png);
     background-size: cover;
-    .opak {
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(255,0,0,0) 100%);
-        opacity: 0.4;
-        transition: all 1s;
-        &:hover {
-            opacity: 1;
-        }
-    }
+    position: relative;
 }
 /* ***** BANNER İÇERİK ***** */
+.banner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(255,0,0,0) 100%);
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+.banner:hover::before {
+    opacity: 0.9;
+}
 .container2 {
     width: 100%;
     height: 100%;
@@ -298,9 +235,14 @@ header {
 
     h1 {
         font-size: 55px;
+        position: relative;
+        z-index: 2;
     }
     h3 {
         font-size: 25px;
+        position: relative;
+        z-index: 2;
+        
     }
 }   
 
@@ -312,6 +254,7 @@ header {
    justify-content: start;
    align-items: center;
    position: relative;
+   z-index: 2;
    img {
         width: 300px;
     }
@@ -329,7 +272,7 @@ header {
 
 .cardsection {
     width: 100%;
-    height: 1000px;
+    height: 1200px;
     background-color: #290505;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
@@ -343,7 +286,7 @@ header {
     align-items: center;
 }
 .cardcontainer2 {
-    height: 930px;
+    height: auto;
     width: 550px;
     display: flex;
     justify-content: center;
@@ -400,8 +343,9 @@ header {
     &:hover {
         background-color: #f02323;
         transform: scale(1.1);
+    }
 }
 .textdiv {
     height: 100%;
-    width: 50%;
+    width: auto;
 }
