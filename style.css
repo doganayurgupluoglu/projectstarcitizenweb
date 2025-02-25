@@ -7,7 +7,8 @@ body html {
     padding: 0;
     
 }
-* h1, h2,h3, button{
+
+* h1, h2,h3, button, p{
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -205,12 +206,12 @@ header {
     width: 100%;
     height: 100%;
     background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(255,0,0,0) 100%);
-    opacity: 0;
+    opacity: 0.8;
     z-index: 1;
     transition: all 0.5s;
 }
 .banner:hover::before {
-    opacity: 0.9;
+    opacity: 1;
 }
 .container2 {
     width: 100%;
@@ -269,65 +270,83 @@ header {
 }
 
 /* **** CARD SECTİON ***** */
-
-.cardsection {
+.section1 {
     width: 100%;
-    height: 1200px;
-    background-color: #290505;
+    height: 100vh;
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, rgb(82, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
+     .cardsection {
+        padding: 50px 0 50px 0;
+        width: 90%;
+        height: auto;
+        border-radius: 100px;
+        background-color: #290505;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
 
-.cardcontainer {
+    /* ***** KART BLOĞU ***** */
+.blok1 {
+    flex: 50%;
     height: 100%;
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cardcontainer2 {
+
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 550px;
+    background-color: #8b25258a;
     height: auto;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        &:hover hr {
+            width: 70%;
+        }
+}
+h1 {
+    transition: all 0.5s;
+}
+.cardcontainer:hover h1 {
+    text-shadow: 0 0 3px white ;
+}
+.cardh1 {
+    width: 100%;
+    text-align: center;
+    font-size: 33px;
+    color: white; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    hr{
+            width: 35%;
+            border: 2px solid white;
+            border-radius: 5px;
+            margin-top: 0px;
+            transition: all 500ms ease-in-out ;
+        }
+}
+.cardcards {
     width: 550px;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 90px;
-    padding-bottom: 50px;
-    box-sizing: border-box;
-    background-color: #8b25258a;
-    border-radius: 6px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-        &:hover .cardtext hr {
-            transition: all 500ms ease-in-out ;
-            width: 330px;
-        }
-}
-
-.cardtext {
-    font-size: 35px;
-    color: #ffffff;
-    font-weight: bold;
-    margin-top: -25px;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.425);
-    transition:all 500ms ease-in-out ;
-    hr{
-        width: 200px;
-        border: 1px solid #ffffff9f;
-        margin-top: 0px;
-        transition: all 500ms ease-in-out ;
-         &:hover {
-                width: 330px;
-            }
-    }
-}
-
-.kartlar {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 0px 40px;
+    height: 800px;
     flex-wrap: wrap;
-    width: 100%;
-    gap: 40px;
+    row-gap: 0px;
+    
 }
 .kart {
     height: 200px;
@@ -345,7 +364,46 @@ header {
         transform: scale(1.1);
     }
 }
-.textdiv {
+
+    /* ***** TEXT BLOĞU ***** */
+.blok2 {
+    width: 70%;
     height: 100%;
-    width: auto;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    h1 {
+        font-size: 25px;
+    }
+    hr{
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.123);
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: all 500ms ease-in-out ;
+    }
+    p {
+        font-style: italic;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+
+}
+.righttext {
+    margin-right: 100px;   
+    h1 {
+        margin-left: 200px;
+    }
+    p {
+        margin-left: 100px;
+    }
+}
+.lefttext {
+    margin-right: 100px;
+    text-align: left;
+    h1 {
+        margin-left: 100px;
+    }
 }
