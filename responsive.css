@@ -25,14 +25,11 @@
     .banner {
         background-position: right;        
     }
-    .map img {
-        width: 200px !important;
-        opacity: 0.85;
-    }
     .cardsection {
         margin-top: 50px;
     }
 }
+
 @media screen and (max-width: 1500px) {
     .container {
         width: 95%;
@@ -44,7 +41,7 @@
     .cardsection {
         flex-wrap: nowrap;
         flex-direction: column;
-        
+        margin-top: 25px;
     }
     .banner .yazi {
         gap: 40px;
@@ -62,30 +59,25 @@
     .banner {
         background-position: right;        
     }
-    .righttext, p {
+    .righttext p, .lefttext p {
         margin: 0px !important;
     }
-    .righttext, h1 {
-        margin: 0px !important;
-        text-align: center;
-    }
-    .lefttext, p {
-        margin: 0px !important;
-    }
-    .lefttext, h1 {
+    .righttext h1, .lefttext h1 {
         margin: 0px !important;
         text-align: center;
     }
     .blok2 {
         margin-left: 0px !important;
-    }
-    .cardsection {
-        margin-top: 25px;
+        order: 1 !important;
     }
     .cardcontainer {
         margin-top: 50px;
     }
+    .blok1 {
+        order: 0 !important;
+    }
 }
+
 @media screen and (max-width: 1320px) {
     .search {
         display: none;
@@ -98,34 +90,14 @@
         gap: 40px;
     }
     .banner .yazi h1 {
-        font-size: 26px;
+        font-size: 34px;
     }
     .banner .yazi h3 {
-        font-size: 16px;
+        font-size: 20px;
     }
     .map img {
         width: 120px !important;
         opacity: 0.7;
-    }
-    .cardsection {
-        margin-top: 25px;
-    }
-    .righttext, p {
-        margin: 0px !important;
-    }
-    .righttext, h1 {
-        margin: 0px !important;
-        text-align: center;
-    }
-    .lefttext, p {
-        margin: 0px !important;
-    }
-    .lefttext, h1 {
-        margin: 0px !important;
-        text-align: center;
-    }
-    .blok2 {
-        margin-left: 0px !important;
     }
     .kart {
         width: 170px;
@@ -135,7 +107,8 @@
         width: 145px;
     }
 }
-@media screen and (max-width: 1050px) {
+
+@media screen and (max-width: 1100px) {
     .menu {
         display: none;
     }
@@ -143,16 +116,11 @@
         font-size: 25px;
         line-height: 50px;
     }
-    .cardsection {
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
     .btn, .btn1 {
         font-size: 13px;
         line-height: 20px !important;
         width: 75px !important;
         margin-bottom: -4px;
-
     }
     .container2 {
         flex-direction: column;
@@ -175,10 +143,10 @@
         margin-bottom: 45px;
     }
     .yazi h1 {
-        font-size: 21px !important;
+        font-size: 31px !important;
     }
     .yazi h3 {
-        font-size: 14px !important;
+        font-size: 18px !important;
     }
     .section1 {
         height: auto;
@@ -192,23 +160,6 @@
     .cardsection p {
         font-size: 13px !important;
     }
-    .blok2 {
-        margin: 0px;
-    }
-    .righttext, p {
-        margin: 0px !important;
-    }
-    .righttext, h1 {
-        margin: 0px !important;
-        text-align: center;
-    }
-    .lefttext, p {
-        margin: 0px !important;
-    }
-    .lefttext, h1 {
-        margin: 0px !important;
-        text-align: center;
-    }
     .cardcontainer {
         width: 90% !important;
         height: 800px !important;
@@ -218,22 +169,24 @@
         height: 600px !important;
     }
     .kart {
-        width: 130px;
-        height: 130px;
+        width: 150px;
+        height: 150px;
     }
     .kart img {
         width: 100px;
     }
 }   
 
-@media screen and (max-width: 400px) {
-    .yazi {
-        width: 100% !important;
-        align-items: center !important;
-        justify-content: end !important;
-        gap: 15px !important;
-        margin-bottom: 45px;
+@media screen and (max-width: 600px) {
+    .yazi h1 {
+        font-size: 20px !important;
     }
+    .yazi h3 {
+        font-size: 16px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
     .yazi h1 {
         font-size: 18px !important;
     }
