@@ -1,0 +1,48 @@
+@media screen and (max-width: 1500px) {
+    .menu {
+        display: none;
+    }
+    .headerleft .gradienth1 {
+        font-size: 35px;
+        line-height: 60px;
+    }
+    .cardsection {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 768px) {
+    .search {
+        display: none;
+    }
+    .gradienth1 {
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+}
+@media screen and (max-width: 500px) {
+    .headerleft .gradienth1 {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .cardsection {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .btn, .btn1 {
+        font-size: 13px;
+        line-height: 20px !important;
+        width: 60px !important;
+
+    }
+    .container2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .container2 .map img {
+        width: 100px;
+    }
+}
+
+

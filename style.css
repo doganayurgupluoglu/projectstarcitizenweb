@@ -147,6 +147,7 @@ header {
         }
     }
 }
+
 /* *****-GİRİŞ YAP VE KAYIT OL BUTONLARI*****/
 .btns {
     display: flex;
@@ -194,7 +195,7 @@ header {
  /* ***** BANNER SECTİON  ****** */
 .banner {
     width: 100%;
-    height: 50vh;
+    height: 52vh;
     background-image: url(/img/gezegen.png);
     background-size: cover;
     position: relative;
@@ -206,11 +207,11 @@ header {
     width: 100%;
     height: 100%;
     background: linear-gradient(360deg, rgba(0,0,0,1) 10%, rgba(255,0,0,0) 100%);
-    opacity: 0.8;
+    opacity: 0.7;
     z-index: 1;
     transition: all 0.5s;
 }
-.banner:hover::before {
+.banner:hover::before , h1 {
     opacity: 1;
 }
 .container2 {
@@ -238,11 +239,13 @@ header {
         font-size: 55px;
         position: relative;
         z-index: 2;
+        opacity: 0.8;
     }
     h3 {
         font-size: 25px;
         position: relative;
         z-index: 2;
+        opacity: 0.7;
         
     }
 }   
@@ -272,7 +275,7 @@ header {
 /* **** CARD SECTİON ***** */
 .section1 {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -377,7 +380,7 @@ h1 {
     gap: 30px;
     h1 {
         font-size: 25px;
-        color: rgba(255, 0, 0, 0.678);
+        color: rgb(255, 255, 255);
     }
     hr{
         width: 100%;
@@ -392,9 +395,7 @@ h1 {
         letter-spacing: 1px;
         font-size: 14px;
         font-weight: 350;
-    }
-    &:hover hr {
-        border: 1px solid rgba(255, 0, 0, 0.068);
+        color: rgba(255, 255, 255, 0.716);
     }
 }
 
