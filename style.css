@@ -5,9 +5,10 @@ body html {
     width: 100%;
     margin: 0;
     padding: 0;
-    
 }
-
+html {
+    scroll-behavior: smooth;
+}
 * h1, h2,h3, button, p{
     font-smooth: always;
     -webkit-font-smoothing: antialiased;
@@ -282,7 +283,7 @@ header {
         padding: 50px 0 50px 0;
         width: 90%;
         height: auto;
-        border-radius: 100px;
+        border-radius: 20px;
         background-color: #290505;
         display: flex;
         justify-content: center;
