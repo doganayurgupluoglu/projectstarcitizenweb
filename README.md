@@ -41,5 +41,5 @@ Projeyi yerel ortamda çalıştırmak için aşağıdaki adımları izleyebilirs
 Bu proje, HTML ve CSS konusunda pratiğimi geliştirmek amacıyla oluşturuldu ve halen geliştirilmektedir. İlerleyen süreçte yeni özellikler eklemeyi ve projeyi daha kapsamlı hale getirmeyi planlıyorum.
 
 ## Katkıda Bulunma
-Bu projeyi geliştirmek için önerilere açığım! Herhangi bir fikir veya öneriniz varsa, lütfen paylaşın. 😊
+Bu projeyi geliştirmek için önerilere açığım! Herhangi bir fikir veya öneriniz varsa, lütfen paylaşmaktan çekinmeyin! 😊
 
